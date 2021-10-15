@@ -92,7 +92,7 @@ export default class Chat extends Component {
             <button className="btn btn-dark px-5 mt-4" type="submit">Send</button>
           </form>
           <div className="py-5 mx-3">
-            Login in as: <strong>{this.state.user.email}</strong>
+            Logueado como : <strong>{this.state.user.email}</strong>
           </div>
         </div>
         <Footer></Footer>

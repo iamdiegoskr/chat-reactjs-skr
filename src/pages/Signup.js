@@ -55,8 +55,8 @@ export default class SignUp extends Component {
 				className="mt-5 py-5 px-5"
 				autoComplete= "off"
 				onSubmit={this.handleSubmit}>
-                    <h1>Sign Up to <Link className="title ml-2" to="/">Chatty</Link></h1>
-                    <p>Fill in the form below to create an account.</p>
+                    <h1>Registrarse <Link className="title ml-2" to="/">Chatty</Link></h1>
+                    <p>Complete el siguiente formulario para crear una cuenta.</p>
                     <div className="form-group">
                         <input className="form-control" placeholder="Email" name="email" type="email" onChange={this.handleChange} value={this.state.email}></input>
                     </div>
@@ -69,13 +69,13 @@ export default class SignUp extends Component {
 						<hr></hr>
 						<p>Or</p>
 						<button className="btn mr-3 text-white btn-signin" onClick={this.googleSignIn} type="button">
-							Sign up with Google
+							Registrarse con Google
 						</button>
 						<button className="btn mr-3 text-white btn-signin" onClick={this.githubSignIn} type="button">
-							Sign up with GitHub
+							Registrarse con Github
 						</button>
                         <hr></hr>
-                        <p>Already have an account? <Link to="/login">Login</Link></p>
+                        <p>Ya tienes una cuenta? <Link to="/login">Inciar sesion</Link></p>
                     </div>
                 </form>
 				<Footer/>
