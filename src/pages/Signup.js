@@ -57,7 +57,7 @@ export default class SignUp extends Component {
 				onSubmit={this.handleSubmit}>
                     <h1>Registrarse <Link className="title ml-2" to="/">Chatty</Link></h1>
                     <p>Complete el siguiente formulario para crear una cuenta.</p>
-                    <div className="form-group">
+                    <div className="form-group form-register">
                         <input className="form-control" placeholder="Email" name="email" type="email" onChange={this.handleChange} value={this.state.email}></input>
                     </div>
                     <div>
@@ -65,9 +65,9 @@ export default class SignUp extends Component {
                     </div>
                     <div className="form-group">
                         {this.state.error ? <p>{this.state.error}</p> : null}
-                        <button className="btn btn-dark px-5" type="submit">Sign up</button>
+                        <button className="btn btn-dark px-5" type="submit">Registrarse</button>
 						<hr></hr>
-						<p>Or</p>
+						<p>O si desea registrarse con otras opciones.</p>
 						<button className="btn mr-3 text-white btn-signin" onClick={this.googleSignIn} type="button">
 							Registrarse con Google
 						</button>

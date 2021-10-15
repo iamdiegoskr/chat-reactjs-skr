@@ -110,3 +110,7 @@ body {
   background: #5b1686;
   margin-left: 12px;
 }
+
+.form-register input{
+  margin-bottom: 18px;
+}
