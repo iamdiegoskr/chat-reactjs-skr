@@ -16,8 +16,8 @@ export default class HomePage extends Component {
                   <p className="lead">A great place to share your thoughts with friends</p>
                 </div>
                 <div className="mt-4 ">
-                  <Link className="btn btn-primary px-5 mr-3" to = "/signup">Create New Account</Link>
-                  <Link className="btn px-5 text-white" to = "/login">Login to your Account</Link>
+                  <Link className="btn btn-primary px-5 mr-3 btn-account" to = "/signup">Create New Account</Link>
+                  <Link className="btn btn-primary px-5 text-white btn-account" to = "/login">Login to your Account</Link>
                 </div>
               </section>
             </div>

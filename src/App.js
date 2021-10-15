@@ -58,6 +58,7 @@ class App extends Component {
     };
   }
 
+  //Verificar si el usuario esta autenticado.
   componentDidMount() {
     auth().onAuthStateChanged((user) => {
       if (user) {

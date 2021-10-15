@@ -32,7 +32,6 @@ export default class SignUp extends Component {
 		}
 	}
 
-    
 	async googleSignIn() {
 		try {
 			await signInWithGoogle();
@@ -49,11 +48,10 @@ export default class SignUp extends Component {
     	}
   	}
 
-
 	render() {
 		return (
 			<div className="container">
-                <form 
+                <form
 				className="mt-5 py-5 px-5"
 				autoComplete= "off"
 				onSubmit={this.handleSubmit}>
@@ -70,17 +68,17 @@ export default class SignUp extends Component {
                         <button className="btn btn-dark px-5" type="submit">Sign up</button>
 						<hr></hr>
 						<p>Or</p>
-						<button className="btn mr-3 text-white" onClick={this.googleSignIn} type="button">
+						<button className="btn mr-3 text-white btn-signin" onClick={this.googleSignIn} type="button">
 							Sign up with Google
 						</button>
-						<button className="btn mr-3 text-white" onClick={this.githubSignIn} type="button">
+						<button className="btn mr-3 text-white btn-signin" onClick={this.githubSignIn} type="button">
 							Sign up with GitHub
 						</button>
                         <hr></hr>
                         <p>Already have an account? <Link to="/login">Login</Link></p>
                     </div>
                 </form>
-				<Footer></Footer>
+				<Footer/>
 			</div>
 		)
 	}

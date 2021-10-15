@@ -11,7 +11,7 @@ const config = {
     storageBucket: "chatty-app-eeee9.appspot.com",
     messagingSenderId: "535156307538",
     appId: "1:535156307538:web:211d2a7d388e53feaf918b",
-    //measurementId: "G-5LH2TY2CD2"
+
   };
   firebase.initializeApp(config);
 

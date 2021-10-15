@@ -58,7 +58,7 @@ export default class Login extends Component {
 				onSubmit={this.handleSubmit}>
 					<h1>Login to <Link className="title ml-2" to = "/">Chatty</Link> </h1>
 					<p className="lead">Fill in the form below to login to your account.</p>
-					<div className="form-group">
+					<div className="form-group form-signin">
 						<input
 						className="form-control"
 						placeholder="Email"
@@ -81,12 +81,14 @@ export default class Login extends Component {
                         <button className="btn btn-dark px-5" type="submit">Login</button>
                     </div>
 					<p>You can also log in with any of these services</p>
-          			<button className="btn mr-3 text-white" onClick={this.googleSignIn}>
-            			Sign in with Google
-          			</button>
-					<button className="btn mr-3 text-white" type="button" onClick={this.githubSignIn}>
-           	 			Sign in with GitHub
-          			</button>
+					<div className="buttons-container-siging">
+						<button className="btn mr-3 text-white btn-signin" onClick={this.googleSignIn}>
+							Sign in with Google
+						</button>
+						<button className="btn mr-3 text-white btn-signin" type="button" onClick={this.githubSignIn}>
+							Sign in with GitHub
+						</button>
+					</div>
 					<hr />
           			<p>
 						Don't have an account? <Link to="/signup">Sign up</Link>

@@ -17,8 +17,8 @@ function Header() {
             <button className="btn btn-dark mr-3" onClick={() => auth().signOut()}>Logout</button>
             </div>
             : <div>
-            <Link className="btn mr-3 text-white" to="/login">Sign In</Link>
-            <Link className="btn mr-3 text-white" to="/signup">Sign Up</Link>
+            <Link className="btn mr-3 text-white btn-header" to="/login">Sign In</Link>
+            <Link className="btn mr-3 text-white btn-header" to="/signup">Sign Up</Link>
             </div>}
         </div>
       </nav>
